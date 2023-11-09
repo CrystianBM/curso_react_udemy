@@ -17,6 +17,9 @@
 }
 
 .card .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     background-color: gray;
     font-weight: 600;

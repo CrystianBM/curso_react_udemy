@@ -1,6 +1,6 @@
 import React from "react"
 
-export default props => {
+export function Family(props){
     return (
         <div>
             {props.children.map((child, i) => {

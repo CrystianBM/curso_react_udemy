@@ -1,16 +1,24 @@
+import "./App.css"
+
+import products from "./data/products";
+
 import { FirstComp } from './components/basics/FirstComp';
 import { CompParameter } from './components/basics/CompParameter';
 import { RandomNumber } from './components/basics/RandomNumber';
 import { Card } from './components/layout/Card';
-import "./App.css"
-import Family from './components/basics/Family';
+import { Family } from './components/basics/Family';
 import FamilyMember from './components/basics/FamilyMember';
+import ProductList from './components/repetition/ProductList';
 
 export function App() {
     return (
         <div id="App">
             <div className="cards">
-                <Card title="4 - Child Component" color="#9C27B0">
+                <Card title="4 - Repetition" color="#FFEE82">
+                    <ProductList list={products}/>
+                </Card>
+
+                <Card title="4 - Child Component" color="#A9E6E6">
                     <Family surname="Smith">
                         <FamilyMember name="Peter" />
                         <FamilyMember name="Ana" />
