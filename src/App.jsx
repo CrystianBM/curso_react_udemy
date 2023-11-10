@@ -6,14 +6,19 @@ import { FirstComp } from './components/basics/FirstComp';
 import { CompParameter } from './components/basics/CompParameter';
 import { RandomNumber } from './components/basics/RandomNumber';
 import { Card } from './components/layout/Card';
-import { Family } from './components/basics/Family';
 import FamilyMember from './components/basics/FamilyMember';
-import ProductList from './components/repetition/ProductList';
+import { Family } from './components/basics/Family';
+import {ProductList} from './components/repetition/ProductList';
+import {EvenOrOdd} from "./components/conditional/EvenOrOdd";
 
 export function App() {
     return (
         <div id="App">
             <div className="cards">
+                <Card title="5 - Conditional" color="#A6CF98">
+                    <EvenOrOdd number={Math.ceil(Math.random() * 20)}/>
+                </Card>
+
                 <Card title="4 - Repetition" color="#FFEE82">
                     <ProductList list={products}/>
                 </Card>
