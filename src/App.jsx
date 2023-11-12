@@ -10,12 +10,19 @@ import FamilyMember from './components/basics/FamilyMember';
 import { Family } from './components/basics/Family';
 import {ProductList} from './components/repetition/ProductList';
 import {EvenOrOdd} from "./components/conditional/EvenOrOdd";
+import {UserInfo} from "./components/conditional/UserInfo";
 
 export function App() {
     return (
         <div id="App">
             <div className="cards">
                 <Card title="5 - Conditional" color="#A6CF98">
+                    -- With username set --
+                    <UserInfo user={{ name: 'Joseph' }}/>
+                    <br></br>
+                    -- No username set --
+                    <UserInfo />
+                    <br></br>
                     <EvenOrOdd number={Math.ceil(Math.random() * 20)}/>
                 </Card>
 
