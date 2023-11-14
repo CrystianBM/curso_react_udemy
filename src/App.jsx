@@ -12,11 +12,16 @@ import { ProductList } from './components/repetition/ProductList';
 import { EvenOrOdd } from "./components/conditional/EvenOrOdd";
 import { UserInfo } from "./components/conditional/UserInfo";
 import { DirectParent } from "./components/communication/DirectParent";
+import { IndirectParent } from "./components/communication/IndirectParent";
 
 export function App() {
     return (
         <div id="App">
             <div className="cards">
+                <Card title="7 - Indirect Communication" color="#61A3BA">
+                    <IndirectParent />
+                </Card>
+
                 <Card title="6 - Direct Communication" color="#B0A695">
                     <DirectParent />
                 </Card>
