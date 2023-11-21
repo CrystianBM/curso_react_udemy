@@ -13,12 +13,17 @@ import { EvenOrOdd } from "./components/conditional/EvenOrOdd";
 import { UserInfo } from "./components/conditional/UserInfo";
 import { DirectParent } from "./components/communication/DirectParent";
 import { IndirectParent } from "./components/communication/IndirectParent";
+import { Input } from "./components/forms/input";
 
 export function App() {
     return (
         <div id="App">
             <div className="cards">
-                <Card title="7 - Indirect Communication" color="#61A3BA">
+                <Card title="8 - Controlled Component" color="#664CBA">
+                    <Input />
+                </Card>
+
+                <Card title="7 - Indirect Communication and useState" color="#61A3BA">
                     <IndirectParent />
                 </Card>
 
