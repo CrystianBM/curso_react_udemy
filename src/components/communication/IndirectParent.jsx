@@ -1,16 +1,16 @@
+import React, { useState } from "react";
 import { IndirectChild } from "./IndirectChild";
 
 export function IndirectParent(props) {
 
-    let name = "-";
-    let age = 0;
-    let working = false;
+    const [name, setName] = useState("?");
+    const [age, setAge] = useState(0);
+    const [working, setWorking] = useState(false);
 
-    function sendInfo(nameP, ageP, workingP) {
-        name = nameP;
-        age = ageP;
-        working = workingP;
-        console.log(name, age, working);
+    function sendInfo(name, age, working) {
+        setName(name);
+        setAge(age);
+        setWorking(working)
     }
 
     return (
