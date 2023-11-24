@@ -14,24 +14,29 @@ import { UserInfo } from "./components/conditional/UserInfo";
 import { DirectParent } from "./components/communication/DirectParent";
 import { IndirectParent } from "./components/communication/IndirectParent";
 import { Input } from "./components/forms/input";
+import Counter from "./components/counter/Counter";
 
 export function App() {
     return (
         <div id="App">
             <div className="cards">
-                <Card title="8 - Controlled Component" color="#664CBA">
+                <Card title="10 - Class Component" color="#a6AC1A">
+                    <Counter initialNum={1034}/>
+                </Card>
+
+                <Card title="9 - Controlled Component" color="#664CBA">
                     <Input />
                 </Card>
 
-                <Card title="7 - Indirect Communication and useState" color="#61A3BA">
+                <Card title="8 - Indirect Communication and useState" color="#61A3BA">
                     <IndirectParent />
                 </Card>
 
-                <Card title="6 - Direct Communication" color="#B0A695">
+                <Card title="7 - Direct Communication" color="#B0A695">
                     <DirectParent />
                 </Card>
 
-                <Card title="5 - Conditional" color="#A6CF98">
+                <Card title="6 - Conditional" color="#A6CF98">
                     -- With username set --
                     <UserInfo user={{ name: 'Joseph' }} />
                     <br></br>
@@ -41,7 +46,7 @@ export function App() {
                     <EvenOrOdd number={Math.ceil(Math.random() * 20)} />
                 </Card>
 
-                <Card title="4 - Repetition" color="#FFEE82">
+                <Card title="5 - Repetition" color="#FFEE82">
                     <ProductList list={products} />
                 </Card>
 
